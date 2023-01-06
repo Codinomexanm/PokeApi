@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e2d6d6;
+}
+.card__content{
+    border: 1px solid red;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+}
+.card__content > img{
+    filter: drop-shadow(4px 3px 5px black);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.card__content > h1 {
+    color:#121212 ;
+    text-align: center;
+    font-family: 'Pokemon Solid';
+    text-shadow: 2px 2px 1px yellow;
+}
+.card__content >p{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+.search__poke{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.search__poke input[type=text] {
+    height: 40px;
+    width: 200px;
+    padding-left: 20px;
+    background-color: rgb(209, 190, 190);
+    border: none;
+    border-radius:8px;
+    margin-right: 5px;
+    color: white;
+}
+.button-1 {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:hover {
+    background-color: yellow;
+    color: #121212;
+}
+
