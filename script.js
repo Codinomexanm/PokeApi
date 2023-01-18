@@ -1,3 +1,11 @@
+var form = document.querySelector('form');
+form.addEventListener("submit", function(evento){
+  evento.preventDefault();
+  var nome = document.getElementById("xxt");
+    if (nome.value != "") {
+        pegaPokemons(nome.value);
+    }
+});
 function pegaPokemons(url){
      fetch(`https://pokeapi.co/api/v2/pokemon/`+url)
      .then(response=> response.json())
@@ -17,17 +25,3 @@ function pegaPokemons(url){
              })
      });
 }
-var nome = document.getElementById("xxt");
-nome.addEventListener('keyup',()=>{
- pegaPokemons(nome.value);
-})
-
-// function Enviar() {
-
-//     var nome = document.getElementById("xxt");
-
-//     if (nome.value != "") {
-//         pegaPokemons(nome.value);
-//     }
-
-// }
